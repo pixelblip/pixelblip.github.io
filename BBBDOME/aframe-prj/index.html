@@ -18,7 +18,9 @@
     </head>
     <body onload="init();">
         <a-scene   shadow="type: basic; autoUpdate: false;" renderer="antialias: false; colorManagement: false; physicallyCorrectLights: false;">
-            
+            <a-entity movement-controls="fly: true">
+  <a-entity camera position="0 1.6 0" look-controls></a-entity>
+</a-entity>
 		
 		<!-- Assets -->
             <a-assets>
