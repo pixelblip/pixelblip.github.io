@@ -18,7 +18,10 @@
     </head>
     <body onload="init();">
         <a-scene   shadow="type: basic; autoUpdate: false;" renderer="antialias: false; colorManagement: false; physicallyCorrectLights: false;">
-            <!-- Assets -->
+            
+		<a-entity oculus-go-controls="hand: left"></a-entity>
+<a-entity oculus-go-controls="hand: right"></a-entity>
+		<!-- Assets -->
             <a-assets>
 				<a-asset-item id="MainMesh" src="./assets/MainMesh.gltf"></a-asset-item>
                 <img id="sky"                 src="./resources/sky.jpg">
