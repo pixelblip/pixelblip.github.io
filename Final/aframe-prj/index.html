@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+    <!-- Generated automatically by AFRAME Exporter for Blender - https://silverslade.itch.io/a-frame-blender-exporter -->
+    <head>
+        <title>WebXR Application</title>
+        <link rel="icon" type="image/png" href="favicon.ico"/>
+        <meta name="description" content="3D Application">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js"></script>
+        <script type="text/javascript" src="js/webxr.js"></script>
+        <script type="text/javascript" src="js/joystick.js"></script>
+        <script type="text/javascript" src="js/camera-cube-env.js"></script>
+        
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body onload="init();">
+        <a-scene   shadow="type: basic; autoUpdate: false;" renderer="antialias: true; colorManagement: true; physicallyCorrectLights: true;">
+            <!-- Assets -->
+            <a-assets>
+				<a-asset-item id="Cylinder" src="./assets/Cylinder.gltf"></a-asset-item>
+				<a-asset-item id="obj_0" src="./assets/obj_0.gltf"></a-asset-item>
+				<a-asset-item id="Sphere" src="./assets/Sphere.gltf"></a-asset-item>
+				<a-asset-item id="tinker" src="./assets/tinker.gltf"></a-asset-item>
+				<img id="image_1" src="./media/image1.png"></img>
+				<img id="image_2" src="./media/image2.png"></img>
+                <img id="sky"                 src="./resources/sky.jpg">
+                <img id="icon-play"           src="./resources/play.png">
+                <img id="icon-pause"          src="./resources/pause.png">
+                <img id="icon-play-skip-back" src="./resources/play-skip-back.png">
+                <img id="icon-mute"           src="./resources/mute.png">
+                <img id="icon-volume-low"     src="./resources/volume-low.png">
+                <img id="icon-volume-high"    src="./resources/volume-high.png">
+            </a-assets>
+
+            <!-- Entities -->
+            
+			<a-entity id="#Cylinder" gltf-model="#Cylinder"  scale="1 1 1" position="-5.409841463688281e-10 -0.00021879831911064684 5.780426051010812e-12" visible="true" shadow="cast: false" ></a-entity>
+			<a-entity id="#obj_0" gltf-model="#obj_0"  scale="1 1 1" position="-18.3685359954834 -3.0004770755767822 2.64754056930542" visible="true" shadow="cast: false" ></a-entity>
+			<a-entity id="#Sphere" gltf-model="#Sphere"  scale="1 1 1" position="-8.626755714416504 235.6999969482422 -210.4171905517578" visible="true" shadow="cast: false" ></a-entity>
+			<a-entity id="#tinker" gltf-model="#tinker"  scale="1 1 1" position="0.0 0.0 -0.0" visible="true" shadow="cast: false" ></a-entity>
+			<a-image images-handler id="#i_1" src="#image_2" class="clickable" width="1" height="1" scale="2.0 2.0 2.0" position="0.0 0.0 -0.0" rotation="0 0.0 0" visible="true" shadow="cast: false"></a-image>
+
+            <!-- Camera -->
+            <a-entity id="player" 
+                position="0 -0.2 0" 
+                movement-controls="speed: 4.659999847412109;">
+                <a-entity id="camera" 
+                    camera="near: 0.001" 
+                    position="0 3.859999895095825 0" 
+                    look-controls="pointerLockEnabled: true">
+                        <a-entity id="cursor" cursor="fuse: false;" animation__click="property: scale; startEvents: click; easing: easeInCubic; dur: 50; from: 	0.1 0.1 0.1; to: 1 1 1"
+                            position="0 0 -0.1"
+                            geometry="primitive: circle; radius: 0.001;"
+                            material="color: #CCC; shader: flat;"
+                            >
+                        </a-entity>
+                </a-entity>
+                    
+            </a-entity>
+
+            <!-- Lights -->
+            
+			<a-entity position="-214.3872833251953 300.9934997558594 223.6130828857422" light="castShadow:false; color:#ffffff; distance:40.0; type:point; intensity:1.0; shadowBias: -0.001; shadowCameraFar: 501.02; shadowCameraBottom: 12; shadowCameraFov: 101.79; shadowCameraNear: 0; shadowCameraTop: -5; shadowCameraRight: 10; shadowCameraLeft: -10; shadowRadius: 2;"></a-entity>
+
+            <!-- Sky -->
+            <a-sky color="#ECECEC"></a-sky>
+        </a-scene>
+    </body>
+</html>
+<!-- Generated automatically by AFRAME Exporter for Blender - https://silverslade.itch.io/a-frame-blender-exporter -->
