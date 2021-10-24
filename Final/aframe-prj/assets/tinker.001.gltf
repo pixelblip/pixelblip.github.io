@@ -1,0 +1,36 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.7.17",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "extras" : {
+                "s_output" : "exporting...",
+                "b_export" : 1,
+                "matlib" : {},
+                "b_settings" : 1,
+                "b_player" : 1,
+                "f_player_speed" : 4.659999847412109,
+                "f_player_height" : 3.859999895095825,
+                "b_renderer" : 1,
+                "b_colorManagement" : 1,
+                "b_aa" : 1,
+                "b_physicallyCorrectLights" : 1,
+                "b_bake_lightmap" : 1,
+                "b_use_lightmapper" : 1,
+                "export_path" : "C:\\Users\\Orbitals\\Desktop\\Final\\"
+            },
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "name" : "tinker.001"
+        }
+    ]
+}
