@@ -18,6 +18,13 @@
     </head>
     <body onload="init();">
         <a-scene   shadow="type: basic; autoUpdate: false;" renderer="antialias: true; colorManagement: true; physicallyCorrectLights: true;">
+		
+		<a-scene>
+  <a-assets>
+    <img id="sky" src="sky.png">
+  </a-assets>
+  <a-sky src="#sky"></a-sky>
+</a-scene>
             <!-- Assets -->
             <a-assets>
 				<a-asset-item id="Cylinder" src="./assets/Cylinder.gltf"></a-asset-item>
