@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>A-Frame Layer Component - Basic</title>
+    <script src="../build.js"></script>
+  </head>
+  <body>
+
+
+    <a-scene>
+
+      <video id="Mary" loop src="textures/MaryOculus.mp4">
+          <source src="textures/MaryOculus.mp4" type="video/mp4"/>
+      </video>
+
+
+
+
+
+      <a-camera position="0 0 10" stereocam="eye:left;"></a-camera>
+
+      <a-entity geometry="primitive: sphere;
+                      radius: 100;
+                      segmentsWidth: 64;
+                      segmentsHeight: 64;"
+              material="shader: flat; src:#Mary;"
+              scale="-1 1 1" stereo="eye:left">
+      </a-entity>
+
+      <a-entity geometry="primitive: sphere;
+                      radius: 100;
+                      segmentsWidth: 64;
+                      segmentsHeight: 64;"
+              material="shader: flat; src:#Mary;"
+              scale="-1 1 1" stereo="eye:right">
+      </a-entity>
+
+
+
+    </a-scene>
+
+  </body>
+</html>
