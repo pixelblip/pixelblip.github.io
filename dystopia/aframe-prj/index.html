@@ -19,7 +19,7 @@
         <script src="https://unpkg.com/aframe-animation-component@5.1.2/dist/aframe-animation-component.min.js"></script>
         <script src="path/to/aframe-environment-component.js"></script>
         
-
+        <script src="https://unpkg.com/aframe-environment-component@1.2.0/dist/aframe-environment-component.min.js"></script>
 
         
     </head>
@@ -40,7 +40,7 @@
                 <a-entity class="environment" position="3.97372 4.67331 13.42972" light="intensity: 5.97; shadowCameraLeft: -10; shadowCameraBottom: -10; shadowCameraRight: 10; shadowCameraTop: 10; angle: 61.37; color: #63ff35; groundColor: #0b00d7; decay: 2.33; type: point"></a-entity>
             </a-assets>
             
-            <a-sky src="#sky"  rotation="0 0 0 " animation="property: rotation; to:360 0 0; dur:100000; loop:true "></a-sky> </a-sky>
+            <a-sky src="#sky"  rotation="0 0 0 " animation="property: rotation; to: 0 360 0; dur:100000; loop:true "></a-sky> </a-sky>
             <!-- Entities -->
             <a-asset-item id="rock1" src="./resources/lightglb.glb"> </a-asset-item>
             
@@ -99,9 +99,9 @@
          
   </a-assets>
  
-              < Camera -->
+            < Camera -->
             <a-entity id="player" 
-                position="0 5 0" 
+                position="0 -2 0" 
                 movement-controls="speed: 0.10000000149011612;">
                 <a-entity id="camera" 
                     camera="near: 1.001" 
@@ -115,11 +115,6 @@
                         </a-entity>
                 </a-entity>
 
-                <!--a-entity gltf-model="#MainMesh" animation-mixer></a-entity>
-                    <a-entity id="leftHand" oculus-touch-controls="hand: left" vive-controls="hand: left"></a-entity>
-					<a-entity id="rightHand" laser-controls oculus-touch-controls="hand: right" vive-controls="hand: right" ></a-entity>
-                    <a-sphere position="-20 300 -400" color="black" radius="20"></a-sphere>
-            </a-entity>
                 <a-entity gltf-model="#MainMesh" animation-mixer></a-entity>
                     <a-entity id="leftHand" oculus-touch-controls="hand: left" vive-controls="hand: left"></a-entity>
 					<a-entity id="rightHand" laser-controls oculus-touch-controls="hand: right" vive-controls="hand: right" ></a-entity>
