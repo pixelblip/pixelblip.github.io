@@ -99,23 +99,27 @@
          
   </a-assets>
  
-             <!-- Camera -->
+              < Camera -->
             <a-entity id="player" 
-                position="-124.69 7.00 17.381"
-                       rotation ="5.271 -87.54 0"
-                movement-controls="speed: 13.3399999141693115;">
+                position="0 -2 0" 
+                movement-controls="speed: 0.10000000149011612;">
                 <a-entity id="camera" 
-                    camera="near: 0.001" 
-                    position="0 5.09 0" 
-                          rotation ="5.271 -87.54 0"
+                    camera="near: 1.001" 
+                    position="40 5 0" 
                     look-controls="pointerLockEnabled: false">
-                        <!a-entity id="cursor" cursor="fuse: false;" animation__click="property: scale; startEvents: click; easing: easeInCubic; dur: 50; from: 	0.1 0.1 0.1; to: 1 1 1"
+                        <a-entity id="cursor" cursor="fuse: false;" animation__click="property: scale; startEvents: click; easing: easeInCubic; dur: 12250; from: 	0.1 0.1 0.1; to: 1 1 1"
                             position="0 0 -0.1"
                             geometry="primitive: circle; radius: 0.001;"
                             material="color: #CCC; shader: flat;"
                             >
                         </a-entity>
+                </a-entity>
 
+                <a-entity gltf-model="#MainMesh" animation-mixer></a-entity>
+                    <a-entity id="leftHand" oculus-touch-controls="hand: left" vive-controls="hand: left"></a-entity>
+					<a-entity id="rightHand" laser-controls oculus-touch-controls="hand: right" vive-controls="hand: right" ></a-entity>
+                    <a-sphere position="-20 300 -400" color="black" radius="20"></a-sphere>
+            </a-entity>
                 <a-entity gltf-model="#MainMesh" animation-mixer></a-entity>
                     <a-entity id="leftHand" oculus-touch-controls="hand: left" vive-controls="hand: left"></a-entity>
 					<a-entity id="rightHand" laser-controls oculus-touch-controls="hand: right" vive-controls="hand: right" ></a-entity>
