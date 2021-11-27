@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+    <!-- Generated automatically by AFRAME Exporter for Blender - https://silverslade.itch.io/a-frame-blender-exporter -->
+    <head>
+        <title>WebXR Application</title>
+        <link rel="icon" type="image/png" href="favicon.ico"/>
+        <meta name="description" content="3D Application">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js"></script>
+        <script type="text/javascript" src="js/webxr.js"></script>
+        <script type="text/javascript" src="js/joystick.js"></script>
+        <script type="text/javascript" src="js/camera-cube-env.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://unpkg.com/aframe-environment-component@1.2.0/dist/aframe-environment-component.min.js"></script>
+        <script src="https://unpkg.com/aframe-randomize-component@^0.3.0/aframe-randomize-component.js"></script>
+        <script src="https://unpkg.com/aframe-animation-component@5.1.2/dist/aframe-animation-component.min.js"></script>
+        <script src="path/to/aframe-environment-component.js"></script>
+        
+
+
+        
+    </head>
+    <body onload="init();">
+        <a-scene   shadow="type: basic; autoUpdate: false;" renderer="antialias: false; colorManagement: false; physicallyCorrectLights:true;">
+            <!-- Assets -->
+            <a-assets>
+				<a-asset-item id="MainMesh" src="./assets/MainMesh.gltf"></a-asset-item>
+                <img id="sky"                 src="./resources/sky.jpg">
+                <img id="icon-play"           src="./resources/play.png">
+                <img id="icon-pause"          src="./resources/pause.png">
+                <img id="icon-play-skip-back" src="./resources/play-skip-back.png">
+                <img id="icon-mute"           src="./resources/mute.png">
+                <img id="icon-volume-low"     src="./resources/volume-low.png">
+                <img id="icon-volume-high"    src="./resources/volume-high.png">
+                
+          
+                <a-entity class="environment" position="3.97372 4.67331 13.42972" light="intensity: 5.97; shadowCameraLeft: -10; shadowCameraBottom: -10; shadowCameraRight: 10; shadowCameraTop: 10; angle: 61.37; color: #63ff35; groundColor: #0b00d7; decay: 2.33; type: point"></a-entity>
+            </a-assets>
+            
+            <a-sky src="#sky"  rotation="0 0 0 " animation="property: rotation; to: 0 360 0; dur:100000; loop:true "></a-sky> </a-sky>
+            <!-- Entities -->
+            <a-asset-item id="rock1" src="./resources/lightglb.glb"> </a-asset-item>
+            
+			<a-entity id="#MainMesh" gltf-model="#MainMesh" scale="0.01 0.01 0.01" visible="false" shadow="cast: false"></a-entity>
+            
+            <a-entity environment="preset:  japan  skyColor:  #1b4a13;  horizonColor:  #ffffff;  lightPosition:  [object Object];  fog:  1;  dressingColor:  #c10005;  dressingVariance:  [object Object];  grid:  2x2"></a-entity>
+           
+  
+
+            <a-entity light="type: ambient; color: #BBB"></a-entity>       
+            
+        <a-entity class="environment" position="2 8 12.7" light="intensity: 5.97; shadowCameraLeft: -10; shadowCameraBottom: -10; shadowCameraRight: 10; shadowCameraTop: 10; angle: 61.37; color: #63ff35; groundColor: #0b00d7; decay: 2.33; type: point"></a-entity>
+        <a-entity class="environment" position="2 12 12.7" light="intensity: 5.97; shadowCameraLeft: -10; shadowCameraBottom: -10; shadowCameraRight: 10; shadowCameraTop: 10; angle: 61.37; color: #63ff35; groundColor: #0b00d7; decay: 2.33; type: point"></a-entity>
+        <a-entity class="environment" position="2 16 12.7" light="intensity: 5.97; shadowCameraLeft: -10; shadowCameraBottom: -10; shadowCameraRight: 10; shadowCameraTop: 10; angle: 61.37; color: #63ff35; groundColor: #0b00d7; decay: 2.33; type: point"></a-entity>
+        <a-entity class="environment" position="2 20 12.7" light="intensity: 5.97; shadowCameraLeft: -10; shadowCameraBottom: -10; shadowCameraRight: 10; shadowCameraTop: 10; angle: 61.37; color: #63ff35; groundColor: #0b00d7; decay: 2.33; type: point"></a-entity>
+        <a-entity class="environment" position="2 24 12.7" light="intensity: 5.97; shadowCameraLeft: -10; shadowCameraBottom: -10; shadowCameraRight: 10; shadowCameraTop: 10; angle: 61.37; color: #63ff35; groundColor: #0b00d7; decay: 2.33; type: point"></a-entity>
+        <a-entity class="environment" position="2 28 12.7" light="intensity: 5.97; shadowCameraLeft: -10; shadowCameraBottom: -10; shadowCameraRight: 10; shadowCameraTop: 10; angle: 61.37; color: #63ff35; groundColor: #0b00d7; decay: 2.33; type: point"></a-entity>
+        <a-entity class="environment" position="2 32 12.7" light="intensity: 5.97; shadowCameraLeft: -10; shadowCameraBottom: -10; shadowCameraRight: 10; shadowCameraTop: 10; angle: 61.37; color: #63ff35; groundColor: #0b00d7; decay: 2.33; type: point"></a-entity>
+        <a-entity class="environment" position="2 36 12.7" light="intensity: 5.97; shadowCameraLeft: -10; shadowCameraBottom: -10; shadowCameraRight: 10; shadowCameraTop: 10; angle: 61.37; color: #63ff35; groundColor: #0b00d7; decay: 2.33; type: point"></a-entity>
+        <a-entity class="environment" position="2 40 12.7" light="intensity: 5.97; shadowCameraLeft: -10; shadowCameraBottom: -10; shadowCameraRight: 10; shadowCameraTop: 10; angle: 61.37; color: #63ff35; groundColor: #0b00d7; decay: 2.33; type: point"></a-entity>
+          
+        <a-entity class="environment" position="3 1.75 12.7" light="intensity: 550.97; shadowCameraLeft: -10; shadowCameraBottom: -10; shadowCameraRight: 10; shadowCameraTop: 10; angle: 61.37; color: #FFFFFF; groundColor: #0b00d7; decay: 2.33; type: point"></a-entity>
+
+        <a-entity class="environment" position="5 3 5" light="intensity: 15.97; shadowCameraLeft: -10; shadowCameraBottom: -10; shadowCameraRight: 10; shadowCameraTop: 10; angle: 61.37; color: #FFFFFF; groundColor: #0b00d7; decay: 2.33; type: point"></a-entity>
+        <a-entity class="environment" position="15 3 -7" light="intensity: 15.97; shadowCameraLeft: -10; shadowCameraBottom: -10; shadowCameraRight: 10; shadowCameraTop: 10; angle: 61.37; color: #FFFFFF; groundColor: #0b00d7; decay: 2.33; type: point"></a-entity>
+        <a-entity class="environment" position="25 3 -11" light="intensity: 15.97; shadowCameraLeft: -10; shadowCameraBottom: -10; shadowCameraRight: 10; shadowCameraTop: 10; angle: 61.37; color: #FFFFFF; groundColor: #0b00d7; decay: 2.33; type: point"></a-entity>
+        <a-entity class="environment" position="35 3 -14" light="intensity: 15.97; shadowCameraLeft: -10; shadowCameraBottom: -10; shadowCameraRight: 10; shadowCameraTop: 10; angle: 61.37; color: #FFFFFF; groundColor: #0b00d7; decay: 2.33; type: point"></a-entity>
+        <a-entity class="environment" position="45 3 -17" light="intensity: 15.97; shadowCameraLeft: -10; shadowCameraBottom: -10; shadowCameraRight: 10; shadowCameraTop: 10; angle: 61.37; color: #FFFFFF; groundColor: #0b00d7; decay: 2.33; type: point"></a-entity>
+        <a-entity class="environment" position="35 3 -217" light="intensity: 15.97; shadowCameraLeft: -10; shadowCameraBottom: -10; shadowCameraRight: 10; shadowCameraTop: 10; angle: 61.37; color: #FFFFFF; groundColor: #0b00d7; decay: 2.33; type: point"></a-entity>
+        <a-entity class="environment" position="22 3 -5" light="intensity: 15.97; shadowCameraLeft: -10; shadowCameraBottom: -10; shadowCameraRight: 10; shadowCameraTop: 10; angle: 61.37; color: #FFFFFF; groundColor: #0b00d7; decay: 2.33; type: point"></a-entity>
+        <a-entity class="environment" position="11 3 -1" light="intensity: 15.97; shadowCameraLeft: -10; shadowCameraBottom: -10; shadowCameraRight: 10; shadowCameraTop: 10; angle: 61.37; color: #FFFFFF; groundColor: #0b00d7; decay: 2.33; type: point"></a-entity>
+        <a-entity class="environment" position="24 3 2" light="intensity: 15.97; shadowCameraLeft: -10; shadowCameraBottom: -10; shadowCameraRight: 10; shadowCameraTop: 10; angle: 61.37; color: #FFFFFF; groundColor: #0b00d7; decay: 2.33; type: point"></a-entity>
+        <a-entity class="environment" position="5 3 8" light="intensity: 15.97; shadowCameraLeft: -10; shadowCameraBottom: -10; shadowCameraRight: 10; shadowCameraTop: 10; angle: 61.37; color: #FFFFFF; groundColor: #0b00d7; decay: 2.33; type: point"></a-entity>
+
+        <audio src="https://cdn.aframe.io/basic-guide/audio/backgroundnoise.wav" autoplay; loop=true></audio>
+            <a-entity distribute="jitter: 20 10.5 20; centerOffset: 59 -2.8 32; src:#rock1; radius:12"></a-entity>
+            
+            <a-box scale="4 1 2" position="-200 48 -50" animation="property: position; to: 1 68 -150; dur: 8000; easing: linear; loop: true" color="black"></a-box>
+            <a-box scale="1 1 2"position="-400 48 -50" animation="property: position; to: 1 68 -150; dur: 5000; easing: linear; loop: true" color="black"></a-box>
+
+            <a-box scale="5 1 3"position="-200 48 -150" animation="property: position; to: 1 68 150; dur: 13000; easing: linear; loop: true" color="black"></a-box>
+            <a-box scale="1 1 1"position="-400 48 -250" animation="property: position; to: 1 68 150; dur: 8000; easing: linear; loop: true" color="black"></a-box>
+            <a-box scale="2 1 3"position="-800 98 -250" animation="property: position; to: 1 168 150; dur: 9000; easing: linear; loop: true" color="black"></a-box>
+            <a-box scale="6 1 3"position="-400 148 -250" animation="property: position; to: 1 168 150; dur: 8000; easing: linear; loop: true" color="black"></a-box>
+            <a-box scale="5 1 2"position="-800 48 -150" animation="property: position; to: 1 68 150; dur: 11000; easing: linear; loop: true" color="black"></a-box>
+            <a-box scale="4 1 2"position="-900 48 -190" animation="property: position; to: 1 68 150; dur: 10000; easing: linear; loop: true" color="black"></a-box>
+    
+            <a-box scale="4 1 3" position="-100 248 -50" animation="property: position; to: 1 268 -150; dur: 9000; easing: linear; loop: true" color="black"></a-box>
+            <a-box scale="5 1 5"position="-600 248 -50" animation="property: position; to: 1 268 -150; dur: 14000; easing: linear; loop: true" color="black"></a-box>
+           
+            <a-entity class="environment" position="20 20 15" light="intensity: 5.97; shadowCameraLeft: -10; shadowCameraBottom: -10; shadowCameraRight: 10; shadowCameraTop: 10; angle: 61.37; color: #63ff35; groundColor: #0b00d7; decay: 2.33; type: point"></a-entity>
+            
+
+            <!--a-entity environment=" skyType: gradient; skyColor: #111; horizonColor: #101; lightPosition: 25 40;  horizonColor :#FFF lighting: near; fog:true "></a-entity>
+
+         
+  </a-assets>
+ 
+            < Camera -->
+            <a-entity id="player" 
+                position="0 -2 0" 
+                movement-controls="speed: 0.10000000149011612;">
+                <a-entity id="camera" 
+                    camera="near: 1.001" 
+                    position="40 5 0" 
+                    look-controls="pointerLockEnabled: false">
+                        <a-entity id="cursor" cursor="fuse: false;" animation__click="property: scale; startEvents: click; easing: easeInCubic; dur: 12250; from: 	0.1 0.1 0.1; to: 1 1 1"
+                            position="0 0 -0.1"
+                            geometry="primitive: circle; radius: 0.001;"
+                            material="color: #CCC; shader: flat;"
+                            >
+                        </a-entity>
+                </a-entity>
+
+                <a-entity gltf-model="#MainMesh" animation-mixer></a-entity>
+                    <a-entity id="leftHand" oculus-touch-controls="hand: left" vive-controls="hand: left"></a-entity>
+					<a-entity id="rightHand" laser-controls oculus-touch-controls="hand: right" vive-controls="hand: right" ></a-entity>
+                    <a-sphere position="-20 300 -400" color="black" radius="20"></a-sphere>
+            </a-entity>
+
+            <!-- Lights -->
+            
+			
+            <!-- Sky -->
+            <!--a-sky color="#ECECEC"></a-sky>
+        </a-scene>
+    </body>
+</html>
+
