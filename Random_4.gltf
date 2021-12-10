@@ -1,0 +1,63 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.6.16",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "extras" : {
+                "b_export" : 1,
+                "export_path" : "C:\\big3\\",
+                "b_interactive" : 1,
+                "b_player" : 1,
+                "b_renderer" : 1,
+                "b_settings" : 1,
+                "b_show_env_sky" : 1,
+                "s_output" : "exporting..."
+            },
+            "name" : "Scene",
+            "nodes" : [
+                1
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "name" : "Random_4",
+            "rotation" : [
+                0.5815539956092834,
+                0.4903263747692108,
+                -0.050643086433410645,
+                0.6471555233001709
+            ],
+            "scale" : [
+                1.6194661855697632,
+                2.566873073577881,
+                2.9102284908294678
+            ]
+        },
+        {
+            "children" : [
+                0
+            ],
+            "name" : "Cloner",
+            "rotation" : [
+                0.7071068286895752,
+                0,
+                0,
+                0.7071067094802856
+            ],
+            "scale" : [
+                0.009999999776482582,
+                0.009999999776482582,
+                0.009999999776482582
+            ],
+            "translation" : [
+                0,
+                -4.767538547515869,
+                0
+            ]
+        }
+    ]
+}

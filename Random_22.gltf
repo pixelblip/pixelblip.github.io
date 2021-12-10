@@ -1,0 +1,173 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.6.16",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "extras" : {
+                "b_export" : 1,
+                "export_path" : "C:\\big3\\",
+                "b_interactive" : 1,
+                "b_player" : 1,
+                "b_renderer" : 1,
+                "b_settings" : 1,
+                "b_show_env_sky" : 1,
+                "s_output" : "exporting..."
+            },
+            "name" : "Scene",
+            "nodes" : [
+                1
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "name" : "Random_22",
+            "rotation" : [
+                0.2271454632282257,
+                0.3955215513706207,
+                -0.7171229124069214,
+                0.5269747376441956
+            ],
+            "scale" : [
+                2.7713778018951416,
+                2.4864344596862793,
+                0.27796095609664917
+            ],
+            "translation" : [
+                5330.775390625,
+                -50389.51953125,
+                0
+            ]
+        },
+        {
+            "children" : [
+                0
+            ],
+            "name" : "Cloner",
+            "rotation" : [
+                0.7071068286895752,
+                0,
+                0,
+                0.7071067094802856
+            ],
+            "scale" : [
+                0.009999999776482582,
+                0.009999999776482582,
+                0.009999999776482582
+            ],
+            "translation" : [
+                0,
+                -4.767538547515869,
+                0
+            ]
+        }
+    ],
+    "animations" : [
+        {
+            "channels" : [
+                {
+                    "sampler" : 0,
+                    "target" : {
+                        "node" : 0,
+                        "path" : "translation"
+                    }
+                },
+                {
+                    "sampler" : 1,
+                    "target" : {
+                        "node" : 0,
+                        "path" : "rotation"
+                    }
+                },
+                {
+                    "sampler" : 2,
+                    "target" : {
+                        "node" : 0,
+                        "path" : "scale"
+                    }
+                }
+            ],
+            "name" : "Random_22|C4D Animation Take|Layer0",
+            "samplers" : [
+                {
+                    "input" : 0,
+                    "interpolation" : "LINEAR",
+                    "output" : 1
+                },
+                {
+                    "input" : 0,
+                    "interpolation" : "LINEAR",
+                    "output" : 2
+                },
+                {
+                    "input" : 0,
+                    "interpolation" : "LINEAR",
+                    "output" : 3
+                }
+            ]
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 91,
+            "max" : [
+                3.033333333333333
+            ],
+            "min" : [
+                0.03333333333333333
+            ],
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 91,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 91,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5126,
+            "count" : 91,
+            "type" : "VEC3"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 364,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1092,
+            "byteOffset" : 364
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1456,
+            "byteOffset" : 1456
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1092,
+            "byteOffset" : 2912
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 4004,
+            "uri" : "data:application/octet-stream;base64,iYgIPYmIiD3NzMw9iYgIPquqKj7NzEw+7+5uPomIiD6amZk+q6qqPry7uz7NzMw+3t3dPu/u7j4AAAA/iYgIPxERET+amRk/IiIiP6uqKj8zMzM/vLs7P0RERD/NzEw/VVVVP97dXT9mZmY/7+5uP3d3dz8AAIA/RESEP4mIiD/NzIw/ERGRP1VVlT+amZk/3t2dPyIioj9mZqY/q6qqP+/urj8zM7M/d3e3P7y7uz8AAMA/RETEP4mIyD/NzMw/ERHRP1VV1T+amdk/3t3dPyIi4j9mZuY/q6rqP+/u7j8zM/M/d3f3P7y7+z8AAABAIiICQEREBEBmZgZAiYgIQKuqCkDNzAxA7+4OQBEREUAzMxNAVVUVQHd3F0CamRlAvLsbQN7dHUAAACBAIiIiQEREJEBmZiZAiYgoQKuqKkDNzCxA7+4uQBERMUAzMzNAVVU1QHd3N0CamTlAvLs7QN7dPUAAAEBAIiJCQDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgDSWpkWF1UTHAAAAgNWYaD7Ngco+XpU3v9HnBj/VmGg+zYHKPl6VN7/R5wY/1ZhoPs2Byj5elTe/0ecGP9WYaD7Ngco+XpU3v9HnBj/VmGg+zYHKPl6VN7/R5wY/1ZhoPs2Byj5elTe/0ecGP9WYaD7Ngco+XpU3v9HnBj/VmGg+zYHKPl6VN7/R5wY/1ZhoPs2Byj5elTe/0ecGP9WYaD7Ngco+XpU3v9HnBj/VmGg+zYHKPl6VN7/R5wY/1ZhoPs2Byj5elTe/0ecGP9WYaD7Ngco+XpU3v9HnBj/VmGg+zYHKPl6VN7/R5wY/1ZhoPs2Byj5elTe/0ecGP9WYaD7Ngco+XpU3v9HnBj/VmGg+zYHKPl6VN7/R5wY/1ZhoPs2Byj5elTe/0ecGP9WYaD7Ngco+XpU3v9HnBj/VmGg+zYHKPl6VN7/R5wY/1ZhoPs2Byj5elTe/0ecGP9WYaD7Ngco+XpU3v9HnBj/VmGg+zYHKPl6VN7/R5wY/1ZhoPs2Byj5elTe/0ecGP9WYaD7Ngco+XpU3v9HnBj/VmGg+zYHKPl6VN7/R5wY/1ZhoPs2Byj5elTe/0ecGP9WYaD7Ngco+XpU3v9HnBj/VmGg+zYHKPl6VN7/R5wY/1ZhoPs2Byj5elTe/0ecGP9WYaD7Ngco+XpU3v9HnBj/VmGg+zYHKPl6VN7/R5wY/1ZhoPs2Byj5elTe/0ecGP9WYaD7Ngco+XpU3v9HnBj/VmGg+zYHKPl6VN7/R5wY/1ZhoPs2Byj5elTe/0ecGP9WYaD7Ngco+XpU3v9HnBj/VmGg+zYHKPl6VN7/R5wY/1ZhoPs2Byj5elTe/0ecGP9WYaD7Ngco+XpU3v9HnBj/VmGg+zYHKPl6VN7/R5wY/1ZhoPs2Byj5elTe/0ecGP9WYaD7Ngco+XpU3v9HnBj/VmGg+zYHKPl6VN7/R5wY/1ZhoPs2Byj5elTe/0ecGP9WYaD7Ngco+XpU3v9HnBj/VmGg+zYHKPl6VN7/R5wY/1ZhoPs2Byj5elTe/0ecGP9WYaD7Ngco+XpU3v9HnBj/VmGg+zYHKPl6VN7/R5wY/1ZhoPs2Byj5elTe/0ecGP9WYaD7Ngco+XpU3v9HnBj/VmGg+zYHKPl6VN7/R5wY/1ZhoPs2Byj5elTe/0ecGP9WYaD7Ngco+XpU3v9HnBj/VmGg+zYHKPl6VN7/R5wY/1ZhoPs2Byj5elTe/0ecGP9WYaD7Ngco+XpU3v9HnBj/VmGg+zYHKPl6VN7/R5wY/1ZhoPs2Byj5elTe/0ecGP9WYaD7Ngco+XpU3v9HnBj/VmGg+zYHKPl6VN7/R5wY/1ZhoPs2Byj5elTe/0ecGP9WYaD7Ngco+XpU3v9HnBj/VmGg+zYHKPl6VN7/R5wY/1ZhoPs2Byj5elTe/0ecGP9WYaD7Ngco+XpU3v9HnBj/VmGg+zYHKPl6VN7/R5wY/1ZhoPs2Byj5elTe/0ecGP9WYaD7Ngco+XpU3v9HnBj/VmGg+zYHKPl6VN7/R5wY/1ZhoPs2Byj5elTe/0ecGP9WYaD7Ngco+XpU3v9HnBj/VmGg+zYHKPl6VN7/R5wY/1ZhoPs2Byj5elTe/0ecGP9WYaD7Ngco+XpU3v9HnBj/VmGg+zYHKPl6VN7/R5wY/1ZhoPs2Byj5elTe/0ecGP9WYaD7Ngco+XpU3v9HnBj/VmGg+zYHKPl6VN7/R5wY/1ZhoPs2Byj5elTe/0ecGP9WYaD7Ngco+XpU3v9HnBj/VmGg+zYHKPl6VN7/R5wY/1ZhoPs2Byj5elTe/0ecGP9WYaD7Ngco+XpU3v9HnBj/VmGg+zYHKPl6VN7/R5wY/1ZhoPs2Byj5elTe/0ecGP9WYaD7Ngco+XpU3v9HnBj/VmGg+zYHKPl6VN7/R5wY/1ZhoPs2Byj5elTe/0ecGP9WYaD7Ngco+XpU3v9HnBj9BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj5BXjFAviEfQOZQjj4="
+        }
+    ]
+}
